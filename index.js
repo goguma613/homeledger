@@ -736,7 +736,7 @@ function loadFromServer(year, month) {
 
   btnLoad.disabled = true;
   const params = new URLSearchParams({ year, month });
-  fetch(`https://goguma613.dothome.co.kr/homeledger/api/load_ledger.php?${paramsNext.toString()}`)
+  fetch(`https://goguma613.dothome.co.kr/homeledger/api/load_ledger.php?${params.toString()}`)
     .then(res => res.json())
     .then(json => {
       if (json.success) {

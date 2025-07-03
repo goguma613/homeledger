@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "category": "테스트카테고리4",
+      "bank": "테스트은행1",
+      "date": "26",
+      "amount": "421755",
+      "done": true,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리1",
+      "bank": "테스트은행4",
+      "date": "17",
+      "amount": "42000",
+      "done": true,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리2",
+      "bank": "테스트은행5",
+      "date": "12",
+      "amount": "373121",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리3",
+      "bank": "테스트은행1",
+      "date": "7",
+      "amount": "159844",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리3",
+      "bank": "테스트은행5",
+      "date": "3",
+      "amount": "149405",
+      "done": true,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리5",
+      "bank": "테스트은행5",
+      "date": "9",
+      "amount": "229621",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리2",
+      "bank": "테스트은행1",
+      "date": "15",
+      "amount": "63641",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리3",
+      "bank": "테스트은행4",
+      "date": "4",
+      "amount": "446386",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리5",
+      "bank": "테스트은행5",
+      "date": "27",
+      "amount": "429476",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리3",
+      "bank": "테스트은행1",
+      "date": "16",
+      "amount": "91443",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    }
+  ],
+  "sections": {
+    "테스트카테고리1": "000-000-0001",
+    "테스트카테고리2": "000-000-0002",
+    "테스트카테고리3": "000-000-0003",
+    "테스트카테고리4": "000-000-0004",
+    "테스트카테고리5": "000-000-0005"
+  }
+}

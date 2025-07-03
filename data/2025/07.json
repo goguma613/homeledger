@@ -5,7 +5,7 @@
             "bank": "자동차보험",
             "date": "15",
             "amount": "50272",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -14,7 +14,7 @@
             "bank": "현대해상",
             "date": "20",
             "amount": "150400",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -23,7 +23,7 @@
             "bank": "삼성생명",
             "date": "20",
             "amount": "44600",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -32,7 +32,7 @@
             "bank": "농협카드",
             "date": "20",
             "amount": "20900",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -41,7 +41,7 @@
             "bank": "신한카드",
             "date": "20",
             "amount": "48620",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -50,7 +50,7 @@
             "bank": "현대해상약대",
             "date": "20",
             "amount": "29726",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -59,7 +59,7 @@
             "bank": "한화손해",
             "date": "21",
             "amount": "85244",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -68,7 +68,7 @@
             "bank": "자동차 할부",
             "date": "16",
             "amount": "662544",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -77,7 +77,7 @@
             "bank": "하나카드",
             "date": "25",
             "amount": "576480",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -86,7 +86,7 @@
             "bank": "형제회비",
             "date": "8",
             "amount": "150000",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -95,7 +95,7 @@
             "bank": "DB손보",
             "date": "15",
             "amount": "10000",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -104,7 +104,7 @@
             "bank": "환화생명약대",
             "date": "15",
             "amount": "37454",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -112,8 +112,8 @@
             "category": "김수옥(농협)",
             "bank": "삼성카드",
             "date": "15",
-            "amount": "131780",
-            "done": true,
+            "amount": "433171",
+            "done": false,
             "excluded": false,
             "memo": "",
             "markedForDeletion": false
@@ -123,7 +123,7 @@
             "bank": "공기청정기_가족",
             "date": "10",
             "amount": "3200",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -132,7 +132,7 @@
             "bank": "공기청정기_오세욱",
             "date": "10",
             "amount": "1400",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -140,17 +140,8 @@
             "category": "김수옥(신한)",
             "bank": "신한카드",
             "date": "16",
-            "amount": "135000",
-            "done": true,
-            "excluded": false,
-            "markedForDeletion": false
-        },
-        {
-            "category": "김수옥(신한)",
-            "bank": "현대해상약대",
-            "date": "20",
-            "amount": "4102",
-            "done": true,
+            "amount": "145100",
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -159,7 +150,16 @@
             "bank": "웅진비데",
             "date": "20",
             "amount": "21950",
-            "done": true,
+            "done": false,
+            "excluded": false,
+            "markedForDeletion": false
+        },
+        {
+            "category": "김수옥(신한)",
+            "bank": "현대해상약대",
+            "date": "20",
+            "amount": "4102",
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -168,7 +168,7 @@
             "bank": "침대안방",
             "date": "20",
             "amount": "20660",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -177,7 +177,7 @@
             "bank": "침대안방",
             "date": "20",
             "amount": "33290",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -186,7 +186,7 @@
             "bank": "세현침대",
             "date": "20",
             "amount": "23650",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -195,17 +195,17 @@
             "bank": "세현 매트리스",
             "date": "20",
             "amount": "",
-            "done": true,
-            "excluded": true,
-            "markedForDeletion": false,
-            "memo": ""
+            "done": false,
+            "excluded": false,
+            "memo": "",
+            "markedForDeletion": false
         },
         {
             "category": "김수옥(신한)",
             "bank": "세욱침대",
             "date": "20",
             "amount": "24900",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -214,8 +214,8 @@
             "bank": "세욱 매트리스",
             "date": "20",
             "amount": "",
-            "done": true,
-            "excluded": true,
+            "done": false,
+            "excluded": false,
             "markedForDeletion": false
         },
         {
@@ -223,7 +223,7 @@
             "bank": "삼성보험",
             "date": "20",
             "amount": "48340",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -232,7 +232,7 @@
             "bank": "현대해상",
             "date": "20",
             "amount": "203720",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -241,7 +241,7 @@
             "bank": "엄마수술메리츠",
             "date": "21",
             "amount": "26290",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -250,7 +250,7 @@
             "bank": "치아매리츠",
             "date": "21",
             "amount": "60000",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -259,7 +259,7 @@
             "bank": "핸드폰",
             "date": "21",
             "amount": "44490",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -268,7 +268,7 @@
             "bank": "삼성화재(1)",
             "date": "23",
             "amount": "123893",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -277,7 +277,7 @@
             "bank": "삼성화재(2)",
             "date": "23",
             "amount": "27007",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -286,7 +286,7 @@
             "bank": "삼성화재(3)",
             "date": "23",
             "amount": "10506",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -295,7 +295,7 @@
             "bank": "교원정수기",
             "date": "25",
             "amount": "38000",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -304,7 +304,7 @@
             "bank": "삼성대출이자",
             "date": "5",
             "amount": "18765",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -312,8 +312,8 @@
             "category": "오세욱",
             "bank": "카드대금",
             "date": "20",
-            "amount": "75740",
-            "done": true,
+            "amount": "77880",
+            "done": false,
             "excluded": false,
             "memo": "넷플릭 13,500+ 핸폰61,240 + 990 ",
             "markedForDeletion": false
@@ -322,8 +322,8 @@
             "category": "오세욱",
             "bank": "삼성생명",
             "date": "20",
-            "amount": "165915",
-            "done": true,
+            "amount": "167358",
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -332,7 +332,7 @@
             "bank": "세욱침대",
             "date": "",
             "amount": "54560",
-            "done": true,
+            "done": false,
             "excluded": true,
             "memo": "",
             "markedForDeletion": false
@@ -342,7 +342,7 @@
             "bank": "카드대금",
             "date": "15",
             "amount": "249490",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -351,7 +351,7 @@
             "bank": "삼성생명",
             "date": "20",
             "amount": "135046",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -359,18 +359,18 @@
             "category": "임시분리",
             "bank": "자동차세",
             "date": "",
-            "amount": "233760",
-            "done": true,
+            "amount": "",
+            "done": false,
             "excluded": false,
-            "markedForDeletion": false,
-            "memo": "지방세입계좌로 입금"
+            "memo": "",
+            "markedForDeletion": false
         },
         {
             "category": "임시분리",
             "bank": "주민세",
             "date": "",
             "amount": "",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -379,7 +379,7 @@
             "bank": "재산세",
             "date": "",
             "amount": "",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -388,7 +388,7 @@
             "bank": "환경부담금",
             "date": "",
             "amount": "",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -396,8 +396,8 @@
             "category": "수도광열비",
             "bank": "전기요금",
             "date": "9",
-            "amount": "81300",
-            "done": true,
+            "amount": "124180",
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -406,7 +406,7 @@
             "bank": "TV수신료",
             "date": "10",
             "amount": "2500",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -415,7 +415,7 @@
             "bank": "도시가스",
             "date": "20",
             "amount": "",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -424,7 +424,7 @@
             "bank": "수도요금",
             "date": "30",
             "amount": "42150",
-            "done": true,
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -432,8 +432,8 @@
             "category": "메모장",
             "bank": "제니스관리비\t",
             "date": "",
-            "amount": "106990",
-            "done": true,
+            "amount": "108860",
+            "done": false,
             "excluded": true,
             "memo": "삼성카드결제",
             "markedForDeletion": false
@@ -442,8 +442,8 @@
             "category": "메모장",
             "bank": "국민카드\t",
             "date": "10",
-            "amount": "546075",
-            "done": true,
+            "amount": "260465",
+            "done": false,
             "excluded": false,
             "markedForDeletion": false
         },
@@ -451,9 +451,29 @@
             "category": "메모장",
             "bank": "교통비\t",
             "date": "5",
-            "amount": "38450",
-            "done": true,
+            "amount": "54000",
+            "done": false,
             "excluded": false,
+            "markedForDeletion": false
+        },
+        {
+            "category": "오세현",
+            "bank": "도시가스",
+            "date": "21",
+            "amount": "",
+            "done": false,
+            "excluded": false,
+            "memo": "",
+            "markedForDeletion": false
+        },
+        {
+            "category": "오세현",
+            "bank": "아파트관리비",
+            "date": "21",
+            "amount": "",
+            "done": false,
+            "excluded": false,
+            "memo": "",
             "markedForDeletion": false
         }
     ],

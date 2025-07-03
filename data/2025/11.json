@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "category": "테스트카테고리3",
+      "bank": "테스트은행2",
+      "date": "11",
+      "amount": "147730",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리4",
+      "bank": "테스트은행1",
+      "date": "13",
+      "amount": "33133",
+      "done": true,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리5",
+      "bank": "테스트은행4",
+      "date": "9",
+      "amount": "14277",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리2",
+      "bank": "테스트은행4",
+      "date": "22",
+      "amount": "104265",
+      "done": true,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리1",
+      "bank": "테스트은행4",
+      "date": "20",
+      "amount": "211536",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리3",
+      "bank": "테스트은행3",
+      "date": "18",
+      "amount": "340418",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리2",
+      "bank": "테스트은행2",
+      "date": "4",
+      "amount": "408333",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리3",
+      "bank": "테스트은행5",
+      "date": "7",
+      "amount": "314415",
+      "done": true,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리2",
+      "bank": "테스트은행2",
+      "date": "28",
+      "amount": "255564",
+      "done": true,
+      "markedForDeletion": false,
+      "excluded": false
+    },
+    {
+      "category": "테스트카테고리1",
+      "bank": "테스트은행4",
+      "date": "21",
+      "amount": "349667",
+      "done": false,
+      "markedForDeletion": false,
+      "excluded": false
+    }
+  ],
+  "sections": {
+    "테스트카테고리1": "000-000-0001",
+    "테스트카테고리2": "000-000-0002",
+    "테스트카테고리3": "000-000-0003",
+    "테스트카테고리4": "000-000-0004",
+    "테스트카테고리5": "000-000-0005"
+  }
+}
