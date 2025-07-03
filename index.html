@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>연·월별 가계부 (계좌 표시 개선)</title>
+  <link rel="stylesheet" href="style.css?v=1.0.5" />
+</head>
+<body>
+  <header class="header">
+    <h1>연·월별 가계부</h1>
+    <div class="selectors">
+      <label for="selectYear">연도: </label>
+      <select id="selectYear"></select>
+
+      <label for="selectMonth">월: </label>
+      <select id="selectMonth"></select>
+      <button id="btnLoad" style="display: none;">불러오기</button>
+      <button id="btnCopyNext">다음 달 복사</button>
+      <button id="btnToggleEdit">편집 모드</button>
+      <button id="btnManage" onclick="location.href='manage.php'">데이터 관리</button>
+      <button id="btnAddSection">섹션 추가</button>
+      <button id="btnDashboard" onclick="location.href='dashboard.html'">대시보드</button>
+    </div>
+    <div id="incompleteCount" class="incomplete-count">
+      미완료 항목: <span id="countValue">0</span>개
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div id="cardsContainer" class="cards-container"></div>
+
+    <div class="buttons">
+      <button id="btnSave">저장 및 완료</button>
+    </div>
+  </main>
+
+  <!-- 커스텀 모달 (확인/취소) -->
+  <div id="customModal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <p id="modalMessage">메시지</p>
+      <div class="modal-buttons">
+        <button id="modalCancel" class="modal-btn cancel">취소</button>
+        <button id="modalOk" class="modal-btn ok">확인</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 추가 모달 -->
+  <div id="sectionModal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <p>새 섹션 추가</p>
+      <div class="section-form">
+        <input id="sectionTitle" type="text" placeholder="섹션 제목(카테고리명)" />
+        <input id="sectionAccount" type="text" placeholder="계좌" />
+      </div>
+      <div class="modal-buttons">
+        <button id="sectionCancel" class="modal-btn cancel">취소</button>
+        <button id="sectionOk" class="modal-btn ok">확인</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 토스트 알림 -->
+  <div id="toast" class="toast hidden">알림</div>
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="index.js?v=1.0.9"></script>
+</body>
+</html>

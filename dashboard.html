@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>가계부 대시보드</title>
+  <link rel="stylesheet" href="style.css?v=1.0.9" />
+  <style>
+    /* ==== dashboard.html 전용 스타일 ==== */
+    .dashboard-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      padding: 12px 16px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .dashboard-header label {
+      font-size: 0.95rem;
+    }
+    .dashboard-header select,
+    .dashboard-header button {
+      padding: 6px 10px;
+      font-size: 0.95rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fafafa;
+      cursor: pointer;
+    }
+    .dashboard-header button:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* 월별 합계 테이블 */
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+    }
+    .summary-table th,
+    .summary-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    .summary-table th {
+      background-color: #f7f7f7;
+    }
+    .summary-total {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+      text-align: right;
+    }
+
+    /* 카테고리 필터 + 카테고리별 합계 테이블 */
+    .category-table-container {
+      margin-bottom: 24px;
+    }
+    .category-table-container label {
+      margin-right: 8px;
+      font-size: 0.95rem;
+    }
+    .category-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+    .category-table th,
+    .category-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    .category-table th {
+      background-color: #f7f7f7;
+    }
+
+    /* 통계 카드 */
+    .statistics-cards {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      flex: 1;
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      text-align: center;
+      min-width: 150px;
+    }
+    .stat-card h4 {
+      margin-bottom: 8px;
+      font-size: 1rem;
+      color: #333;
+    }
+    .stat-card div {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    /* 상위/하위 거래 테이블 */
+    .top-bottom-tables {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .table-container {
+      flex: 1;
+      min-width: 300px;
+    }
+    .tx-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+    }
+    .tx-table th,
+    .tx-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    .tx-table th {
+      background-color: #f7f7f7;
+    }
+  </style>
+</head>
+<body>
+  <!-- 대시보드 헤더: 연도, 기간(월) 선택 -->
+  <div class="dashboard-header">
+    <label for="dashYear">연도 선택:</label>
+    <select id="dashYear"></select>
+
+    <label for="startMonth">시작월:</label>
+    <select id="startMonth"></select>
+
+    <label for="endMonth">종료월:</label>
+    <select id="endMonth"></select>
+
+    <button id="btnLoadDashboard">요약 불러오기</button>
+  </div>
+
+  <!-- 월별 합계 테이블 -->
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>월</th>
+        <th>합계 금액</th>
+      </tr>
+    </thead>
+    <tbody id="summaryBody">
+      <!-- JS에서 채워줌 -->
+    </tbody>
+  </table>
+
+  <!-- 합계 텍스트: 선택한 기간 총합 -->
+  <div id="yearTotal" class="summary-total">총 지출 합계: 0원</div>
+
+  <!-- 월별 지출 바 차트 -->
+  <div class="chart-container">
+    <canvas id="chartCanvas"></canvas>
+  </div>
+
+<!-- ◼ 은행 필터 + 은행별 지출 합계 테이블 -->
+<div class="category-table-container">
+  <h3>은행별 합계 (선택 기간)</h3>
+  <label for="bankFilter">은행 선택:</label>
+  <select id="bankFilter"></select>
+  <table id="bankSummary" class="category-table">
+    <thead>
+      <tr>
+        <th>은행명</th>
+        <th>총액(원)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- JS에서 채워줌 -->
+    </tbody>
+  </table>
+</div>
+
+<!-- ◼ 지출 추세 라인 차트 -->
+<h3>지출 추세 (선택 기간)</h3>
+<div class="chart-container">
+  <canvas id="compareChart"></canvas>
+</div>
+
+  <!-- ◼ 거래 건수 및 평균 거래액 표시 영역 -->
+  <div class="statistics-cards">
+    <div class="stat-card">
+      <h4>거래 건수</h4>
+      <div id="monthlyTxCount">0건</div>
+    </div>
+    <div class="stat-card">
+      <h4>평균 거래액</h4>
+      <div id="monthlyAvgAmount">0원</div>
+    </div>
+  </div>
+
+  <!-- ◼ 상위/하위 거래 내역 테이블 -->
+  <h3>가장 큰/작은 지출 내역 (선택 기간)</h3>
+  <div class="top-bottom-tables">
+    <!-- 상위 5건 -->
+    <div class="table-container">
+      <h4>가장 큰 지출 5건</h4>
+      <table id="topTransactions" class="tx-table">
+        <thead>
+          <tr>
+            <th>날짜</th>
+            <th>카테고리</th>
+            <th>금액(원)</th>
+            <th>메모</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JS에서 채워줌 -->
+        </tbody>
+      </table>
+    </div>
+    <!-- 하위 5건 -->
+    <div class="table-container">
+      <h4>가장 작은 지출 5건</h4>
+      <table id="bottomTransactions" class="tx-table">
+        <thead>
+          <tr>
+            <th>날짜</th>
+            <th>카테고리</th>
+            <th>금액(원)</th>
+            <th>메모</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JS에서 채워줌 -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js?v=1.0.4"></script>
+</body>
+</html>
