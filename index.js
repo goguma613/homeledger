@@ -736,7 +736,7 @@ function loadFromServer(year, month) {
 
   btnLoad.disabled = true;
   const params = new URLSearchParams({ year, month });
-  fetch(`api/load_ledger.php?${params.toString()}`)
+  fetch(`https://goguma613.dothome.co.kr/homeledger/api/load_ledger.php?${paramsNext.toString()}`)
     .then(res => res.json())
     .then(json => {
       if (json.success) {
@@ -792,7 +792,7 @@ function saveToServer(customYear, customMonth) {
   };
 
   btnSave.disabled = true;
-  return fetch('api/save_ledger.php', {
+  return fetch('https://goguma613.dothome.co.kr/homeledger/api/save_ledger.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json; charset=utf-8' },
     body: JSON.stringify(payload)
@@ -837,7 +837,7 @@ async function copyToNextMonth() {
   const paramsNext = new URLSearchParams({ year: nextYear, month: String(nextMonth).padStart(2, '0') });
   let proceed = true;
   try {
-    const res = await fetch(`api/load_ledger.php?${paramsNext.toString()}`);
+    const res = await fetch(`https://goguma613.dothome.co.kr/homeledger/api/load_ledger.php?${params.toString()}`)
     const json = await res.json();
     // 이미 다음 달 데이터가 있으면 덮어쓸지 물어봄
     if (json.success && Array.isArray(json.data) && json.data.length > 0) {
